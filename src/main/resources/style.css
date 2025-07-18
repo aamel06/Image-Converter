@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+
+
+.root {
+    -fx-background-color: #0D1B2A;
+}
+
+
+
+
+.button {
+    -fx-background-color: #1B263B;
+    -fx-background-radius: 8;
+    -fx-text-fill: #E0E1DD;
+    -fx-font-size: 15px;
+    -fx-font-family: Gabarito, SansSerif;
+}
+
+.label {
+    -fx-text-fill: #E0E1DD;
+    -fx-font-size: 15px;
+    -fx-font-family: Gabarito, SansSerif;
+}
+
+.title {
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+}
+
+.highlighted{
+    -fx-text-fill: #778da9;
+}
+
+.extra {
+    -fx-font-size: 13px;
+}
+
+.choice-box{
+    -fx-background-color: #1B263B;
+    -fx-text-fill: #E0E1DD;
+    -fx-mark-color: #E0E1DD;
+    -fx-font-size: 15px;
+    -fx-font-family: Gabarito, SansSerif;
+}
+
+.choice-box .context-menu{
+    -fx-background-color: #1B263B;
+}
+
+.choice-box .menu-item:focused{
+    -fx-background-color: #415A77;
+}
+
+.color-picker{
+    -fx-background-color: #1B263B;
+    -fx-text-fill: #E0E1DD;
+    -fx-mark-color: #E0E1DD;
+    -fx-font-size: 15px;
+    -fx-font-family: Gabarito, SansSerif;
+}
+
+.color-rect-pane {
+    -fx-background-color: #34495e;
+}
+
+.color-picker .context-menu{
+    -fx-background-color: #1B263B;
+}
+
+.text-field{
+    -fx-background-color: #1B263B;
+    -fx-text-fill: #E0E1DD;
+    -fx-mark-color: #E0E1DD;
+    -fx-font-size: 15px;
+    -fx-font-family: Gabarito, SansSerif;
+}
+
+.button:hover:pressed{
+    -fx-background-color: #0f1723;
+}
+
+.button:hover{
+    -fx-background-color: #28385a;
+}
