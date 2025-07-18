@@ -185,9 +185,9 @@ public class HelloApplication extends Application {
                         String input = pageSelector.getText().trim();
                         index = Integer.parseInt(input);
 
-                        if (index < 0 || index > document.getNumberOfPages() - 1){
+                        if (index <= 0 || (document.getNumberOfPages() != 1 && index > document.getNumberOfPages() - 1)){
                             Alert a = new Alert(Alert.AlertType.WARNING);
-                            a.setContentText("Please enter a number that is within the number of pages in the file.");
+                            a.setContentText("Please enter a number that is within the number of pages of the file.");
                             a.showAndWait();
                             return;
                         }
@@ -195,7 +195,7 @@ public class HelloApplication extends Application {
                         bufferedImage = renderer.renderImage(index - 1);
                     } catch (NumberFormatException e) {
                         Alert a = new Alert(Alert.AlertType.WARNING);
-                        a.setContentText("Please enter a valid number.");
+                        a.setContentText("Please enter a valid page number.");
                         a.showAndWait();
                         return;
                     }
@@ -214,7 +214,7 @@ public class HelloApplication extends Application {
                 if (saveLocation != null){
                     System.out.println(selImg.getFileAddress());
                     System.out.println("IMAGE CONVERTING...");
-                    ch.startConversion(bufferedImage,ch.getFileExtension(selImg.getFileAddress()), saveLocation); // Begins conversion
+                    ch.startConversion(bufferedImage, saveLocation); // Begins conversion
 
                 }
             }
